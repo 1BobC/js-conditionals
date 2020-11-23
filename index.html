@@ -9,8 +9,7 @@
 </head>
 
 <body>
-    <h2>Javascript String Properties</h2>
-
+  <!--<h2>Javascript String Properties</h2>
     <p>The length property returns the length of a string</p>
 
     <p id="demo"></p>
@@ -19,19 +18,81 @@
 let txt= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let sln= txt.length;
 document.getElementById("demo").innerHTML = "In this case  " + sln;
-</script>
-<h2>Extracting string parts</h2>
+</script>-->
+
+<!--<h2>Extracting string parts</h2>
 <p>The slice() method extracts a part of a string and returns extracted
   part as a new string</p>
   <p id= "demo1"></p>
   <script>
+
     let str= "Apple, Banana, Kiwi";
     /*let res= str.slice(7,13); 
     or using negative position values*/
     let res= str.slice(-12,-6);
-    document.getElementById("demo1").innerHTML= "Using positive or negative position values is... " + res;
-  </script>
-  <p>The </p>
-</body
+    document.getElementById("demo1").innerHTML= "Using positive or negative position values, answer is ... " + res;
+  </script>-->
 
+  <p>Check the login </p>
+  <script> 
+    'use strict';
+
+let userName = prompt("Who's there?", '');
+
+if (userName === 'Admin') {
+
+  let pass = prompt('Password?', '');
+
+  if (pass === 'TheMaster') {
+    alert( 'Welcome!' );
+  } else if (pass === '' || pass === null) {
+    alert( 'Canceled' );
+  } else {
+    alert( 'Wrong password' );
+  }
+} else if (userName === '' || userName === null) {
+  alert( 'Canceled' );
+} else {
+  alert( "I don't know you" );
+}
+  </script>
+
+  <!--<p4>Make a weather choice</p4><br><br>
+
+    <label for="weather">Select the weather type today: </label>
+<select id="weather">
+  <option value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+
+<script>
+const select = document.querySelector('select');
+const para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+/*select.onchange = setWeather;*/
+function setWeather() {
+  const choice = select.value;
+
+  if (choice === 'sunny') {
+    para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+  } else if (choice === 'rainy') {
+    para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+  } else if (choice === 'snowing') {
+    para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+  } else if (choice === 'overcast') {
+    para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+  } else {
+    para.textContent = '';
+  }
+}
+</script>-->
+
+
+</body
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <title>Javascript conditionalsB</title>
+  <link rel="stylesheet" href="style.CSS">
+  <link rel="stylesheet" href="reset.CSS">
+</head>
+<body>
+<h2>General if/else, switch, statement:</h2>
+<p>Use if to specify a block of code to be executed, if a specified condition is true</p>
+<p>Use else to specify a block of code to be executed, if the same condition is false</p>
+<p>Use else if to specify a new condition to test, if the first condition is false</p>
+<p>Use switch to specify many alternative blocks of code to be executed</p>
+
+
+<!--<h2>If/else Time display</h2>
+<p>Click the button for greeting</p>
+<button onclick="myFunction()">Try it!</button>
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        let hour = new Date().getHours();
+        let greeting;
+        if (hour < 10) {
+            greeting = "Good morning";
+        } else if (hour <20) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening"
+        }
+        document.getElementById("demo").innerHTML = greeting;
+        }
+</script>-->
+<h2>Switch works like this:</h2>
+<p>The switch expression is evaluated once.</p>
+<p>The value of the expression is compared with the values of each case.</p>
+<p>If there is a match, the associated block of code is executed.</p>
+<p>If there is no match, the default code block is executed.</p>
+<p>EG what day of the week is it?</p>
+
+<p id= "demo1"></p>
+
+<script>
+    let day;
+    switch (new Date().getDay()) {
+        case 0:
+        day = "Sunday";
+        break;
+        case 1:
+        day = "Monday";
+        break;
+        case 2:
+        day = "Tuesday";
+        break;
+        case 3:
+        day = "Wednesday";
+        break;
+        case 4:
+        day = "Thursday";
+        break;
+        case 5:
+        day = "Friday";
+        break;
+        case 6: 
+        day = "Saturday";
+        break; 
+    }
+        document.getElementById("demo1").innerHTML = "Today is " + day;   
+</script>
+
+</body>
+</html>
