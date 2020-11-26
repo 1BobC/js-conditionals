@@ -34,42 +34,64 @@
         document.getElementById("demo").innerHTML = greeting;
         }
 </script>-->
-<h2>Switch works like this:</h2>
+<!--<h2>Switch works like this:</h2>
 <p>The switch expression is evaluated once.</p>
 <p>The value of the expression is compared with the values of each case.</p>
 <p>If there is a match, the associated block of code is executed.</p>
-<p>If there is no match, the default code block is executed.</p>
-<p>EG what day of the week is it?</p>
+<p>If there is no match, the default code block is executed.</p>-->
 
+<!--<p>EG what day of the week is it?</p>-->
+<!--<p>Are the ferries running today?</p>
 <p id= "demo1"></p>
 
 <script>
     let day;
     switch (new Date().getDay()) {
         case 0:
-        day = "Sunday";
+        day = "Sunday, ferries off.";
         break;
         case 1:
-        day = "Monday";
+        day = "Monday, ferries on.";
         break;
         case 2:
-        day = "Tuesday";
+        day = "Tuesday, ferries off.";
         break;
         case 3:
-        day = "Wednesday";
+        day = "Wednesday, ferries on.";
         break;
         case 4:
-        day = "Thursday";
+        day = "Thursday, ferries off.";
         break;
         case 5:
-        day = "Friday";
+        day = "Friday, ferries on.";
         break;
         case 6: 
-        day = "Saturday";
+        day = "Saturday, ferries on.";
         break; 
     }
-        document.getElementById("demo1").innerHTML = "Today is " + day;   
-</script>
+        /*document.getElementById("demo1").innerHTML = "Today is " + day;*/
+        document.getElementById("demo1").innerHTML = "Ferry information: Today is " + day;   
+</script>-->
 
+<p>If, else/if, else time enquiry</p>
+<p>Click the button to find out if the shop is open.</p>
+<button onclick="myFunction()">Try it!</button>
+<p id= "demo2"></p>
+
+<script>
+    function myFunction() {
+    let hour = new Date().getHours(); 
+    let sign;
+    if (hour >=9 && hour <=12) {
+        sign= " and the shop is open";   
+    } else if (hour >=13 && hour <= 18) {
+        sign= " and the shop is open";  
+    } else {
+        sign= " and the shop is closed";
+    }
+    document.getElementById("demo2").innerHTML = "The hour is " + hour + sign;
+    }
+   
+</script>
 </body>
 </html>
