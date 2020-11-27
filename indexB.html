@@ -73,7 +73,7 @@
         document.getElementById("demo1").innerHTML = "Ferry information: Today is " + day;   
 </script>-->
 
-<p>If, else/if, else time enquiry</p>
+<!--<p>If, else/if, else time enquiry</p>
 <p>Click the button to find out if the shop is open.</p>
 <button onclick="myFunction()">Try it!</button>
 <p id= "demo2"></p>
@@ -92,6 +92,34 @@
     document.getElementById("demo2").innerHTML = "The hour is " + hour + sign;
     }
    
-</script>
+</script>-->
+
+<!--<p>Switch code Which ingredient do I add for Montelbano Zuppa ? </p>
+<p id= "demo3"></p>
+
+<script>
+    let ingrediant;
+</script>-->
+
+<p>Should I include this ingredient in Montalbano Zuppe?:</p>
+
+<label for="myCheck">Carrots:</label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Yes, include carrots!</p>
+
+<script>
+    function myFunction() {
+      let checkBox = document.getElementById("myCheck");
+      let text = document.getElementById("text"); //convert if/else to switch for more ingredients
+      if (checkBox.checked == true){
+        text.style.display = "block";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+
 </body>
 </html>
