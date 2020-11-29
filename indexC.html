@@ -9,7 +9,75 @@
 </head>
 <body>
     <h2>Practise if/else and switch statement exercises from learning resources.</h2>
+<h3>if/else statements first:</h3>
 
+<h3>Ingredient advice for Montelbano Zuppe.</h3>
 
+<label for="ingredient">Which ingredient should I add? </label>
+<select  id="ingredient">
+ <option value="">--Choose an ingredient--</option>
+ <option value="onions">Onions</option>
+ <option value="carrots">Carrots</option>
+ <option value="celery">Celery</option>
+ <option value="zukini">Zukini</option>
+ <option value="garlic">Garlic</option>
+ <option value="vegetableStock">Vegetable stock</option>
+ <option value="beefStock">Beef stock</option>
+ <option value="chickenStock">Chicken stock</option>
+ <option value="tomatoes">Tomatoes</option>
+ <option value="anchovies">Anchovies</option>
+ <option value="sardines">Sardines</option>
+ <option value="redChilli">Red chilli</option>
+ <option value="whiteWine">White wine</option>
+ <option value="squid">Squid</option>
+ <option value="mussels">Mussels</option>
+</select>
+
+<p></p>
+
+<script>
+  const select = document.querySelector('select');
+  const para = document.querySelector('p');
+  select.addEventListener('change', setIngredient);
+  /*select.onchange = setIngredient;*/
+  function setIngredient() {
+    const choice = select.value;
+
+    if (choice === 'onions') {
+      para.textContent = 'Yes, onions every time!';
+  } else if (choice === 'carrots') {
+      para.textContent = 'Better ask Montelbano.';
+  } else if (choice === 'celery') {
+      para.textContent = 'Almost always.';
+  } else if (choice === 'zukini') {
+      para.textContent = 'Always, but not too much.';
+  } else if (choice === 'garlic') {
+      para.textContent = 'Always, and two cloves.';
+  } else if (choice === 'vegetableStock') {
+      para.textContent = 'Yes, preferably home made.';
+  } else if (choice === 'beefStock') {
+      para.textContent = 'Better not, ever!';
+  } else if (choice === 'chickenStock') {
+      para.textContent = 'Only if you don\'t have Vegetable stock.';
+  } else if (choice === 'tomatoes') {
+    para.textContent = 'Must, must include';
+  } else if (choice === 'anchovies') {
+    para.textContent = 'Yes, fresh or tinned and plenty of them.';
+  } else if (choice === 'sardines') {
+    para.textContent = 'No, better with pasta.';
+  } else if (choice === 'red chilli') {
+    para.textContent = 'Yes, but only a little.';
+  } else if (choice === 'whiteWine') {
+    para.textContent = 'Always!';
+  } else if (choice === 'squid') {
+    para.textContent = 'Yes please, if available can include with Mussels.';
+  } else if (choice === 'mussels') {
+    para.textContent = 'Yes please, if available can include with Squid.';
+    else para.textContent = '';
+  }
+     
+  }
+
+</script>
 </body>
 </html>
