@@ -93,33 +93,41 @@
     }
    
 </script>-->
-
-<!--<p>Switch code Which ingredient do I add for Montelbano Zuppa ? </p>
+<br>
+<p>Which ingredient do I add for Montelbano Zuppa ? </p>
 <p id= "demo3"></p>
 
-<script>
-    let ingrediant;
-</script>-->
-
-<p>Should I include this ingredient in Montalbano Zuppe?:</p>
-
-<label for="myCheck">Carrots:</label> 
+<label for="myCheck">Carrots:</label>
 <input type="checkbox" id="myCheck" onclick="myFunction()">
-
 <p id="text" style="display:none">Yes, include carrots!</p>
 
 <script>
     function myFunction() {
       let checkBox = document.getElementById("myCheck");
-      let text = document.getElementById("text"); //convert if/else to switch for more ingredients
-      if (checkBox.checked == true){
+      let text = document.getElementById("text");      
+     if (checkBox.checked == true){
         text.style.display = "block";
       } else {
          text.style.display = "none";
       }
-    }
+      /*document.getElementById("demo3").innerHTML = text;  */
+      }
     </script>
-
-
+<br>
+<label for="myChecka">Onions:</label>
+<input type="checkbox" id="myChecka" onclick="myFunction()">
+<p id="texta" style="display:none">Yes, include onions!</p>
+<script>
+    function myFunction() {
+      let checkBox = document.getElementById("myChecka");
+      let text = document.getElementById("texta");      
+     if (checkBox.checked == true){
+        text.style.display = "block";
+      } else {
+         text.style.display = "none";
+      }
+      /*document.getElementById("demo3").innerHTML = text;*/
+      }
+    </script>
 </body>
 </html>
