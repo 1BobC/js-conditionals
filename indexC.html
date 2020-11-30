@@ -11,7 +11,7 @@
     <h2>Practise if/else and switch statement exercises from learning resources.</h2>
 <h3>if/else statements first:</h3>
 
-<!--<h3>Ingredient advice for Montelbano Zuppe.</h3>
+<h3>Ingredient advice for Montelbano Zuppe.</h3>
 
 <label for="ingredient">Which ingredient should I add? </label>
 <select  name= "zuppe" id="ingredient">
@@ -36,51 +36,53 @@
 <p></p>
 
 <script>
-  let select = document.querySelector('select');
-  let para = document.querySelector('p');
-  /*select.addEventListener('change', setIngredient);*/
-  select.onchange = setIngredient;
+  const select = document.querySelector('select');
+  const para = document.querySelector('p');
+
+  select.addEventListener('change', setIngredient);
+ 
   function setIngredient() {
-    let choice = select.value;
+  const choice = select.value;
 
-    if (choice == 'onions') {
+    if (choice === 'onions') {
       para.textContent = 'Yes, onions every time!';
-  } else if (choice == 'carrots') {
+  } else if (choice === 'carrots') {  
       para.textContent = 'Better ask Montelbano.';
-  } else if (choice == 'celery') {
+  } else if (choice === 'celery') {
       para.textContent = 'Almost always.';
-  } else if (choice == 'zukini') {
-      para.textContent = 'Always, but not too much.';
-  } else if (choice == 'garlic') {
+  } else if (choice === 'zukini') {
+      para.textContent == 'Always, but not too much.';
+  } else if (choice === 'garlic') {
       para.textContent = 'Always, and two cloves.';
-  } else if (choice == 'vegetableStock') {
+  } else if (choice === 'vegetableStock') {
       para.textContent = 'Yes, preferably home made.';
-  } else if (choice == 'beefStock') {
+  } else if (choice === 'beefStock') {
       para.textContent = 'Better not, ever!';
-  } else if (choice == 'chickenStock') {
+  } else if (choice === 'chickenStock') {
       para.textContent = 'Only if you don\'t have Vegetable stock.';
-  } else if (choice == 'tomatoes') {
+  } else if (choice === 'tomatoes') {
     para.textContent = 'Must, must include';
-  } else if (choice == 'anchovies') {
+  } else if (choice === 'anchovies') {
     para.textContent = 'Yes, fresh or tinned and plenty of them.';
-  } else if (choice == 'sardines') {
+  } else if (choice === 'sardines') {
     para.textContent = 'No, better with pasta.';
-  } else if (choice == 'red chilli') {
+  } else if (choice === 'red chilli') {
     para.textContent = 'Yes, but only a little.';
-  } else if (choice == 'whiteWine') {
+  } else if (choice === 'whiteWine') {
     para.textContent = 'Always!';
-  } else if (choice == 'squid') {
+  } else if (choice === 'squid') {
     para.textContent = 'Yes please, if available can include with Mussels.';
-  } else if (choice == 'mussels') {
+  } else if (choice === 'mussels') {
     para.textContent = 'Yes please, if available can include with Squid.';
-    else para.textContent = '';
-  }
-     
+  }  else  {
+    para.textContent = '';
   }
 
-</script>-->
+  }
 
-<p4>Make an ingredient choice</p4><br><br>
+</script>
+
+<!--<p4>Make an ingredient choice</p4><br><br>
 
     <label for="ingredient">Select the ingredient today: </label>
 <select name= "zuppe" id="ingredient">
@@ -100,8 +102,7 @@ const select = document.querySelector('select');
 const para = document.querySelector('p');
 
 select.addEventListener('change', setIngredient);
-/*select.onchange = setWeather;*/
-/*select.onchange = setIngredient;*/
+
 function setIngredient() {
   const choice = select.value;
 
@@ -121,6 +122,6 @@ function setIngredient() {
     para.textContent = '';
   }
 }
-</script>
+</script>-->
 </body>
 </html>
