@@ -123,5 +123,109 @@ function setIngredient() {
   }
 }
 </script>-->
+
+
+
+<h3>Now a switch statement: Trigonometry the Unit Circle.</h3>
+<!--<p>Sine trig values for angles in the first quadrant.</p>
+
+
+<label for= "angle">Choose an angle</label>
+ <select name="unitAngle" id="angle">
+   <option value="">--Choose an angle--</option>
+   <option value="noDeg">0 deg</option>
+   <option value="thirtyDeg">30 deg</option>
+   <option value="fourtyFiveDdeg">45 deg</option>
+   <option value="sixtyDeg">60 deg</option>
+   <option value="ninetyDdeg">90 deg</option>
+ </select>-->
+
+ <!--<script>
+
+  
+
+  function setAngle() {
+  /*const choice = setAngle;*/
+  document.getElementsByName(angle)
+   
+     
+    switch (new angle().getAngle()){
+    case noDeg:
+    angle = ;
+    break;
+    case thirtyDeg:
+    angle = "30 deg, sine = 0.5";
+    break;
+    case fourtyFiveDeg:
+    angle = "45 deg, sine = 0.71";
+    break;
+    case sixtyDeg:
+    angle = "60 deg, sine = 0.87";
+    break;
+    case ninetyDeg:
+    angle = "90 deg, sin = 1";
+    break;
+    }
+  }
+ </script>-->
+
+ <h3>Write noDeg, thirtyDeg, fourtyFiveDeg in theinput field and click the button.</h3>
+ <p>The switch statement will execute a block of code based on your input.</p>
+ 
+ <input id="myInput" type= "text">
+ <button onclick="myFunction()">Try it!</button>
+<p id="demo0"></p>
+<script>
+  function myFunction(){
+    var text;
+    var angles= document.getElementById("myInput").value;
+
+    switch(angles){
+      case "noDeg":
+      text = "0 deg, sine0  = 0";
+      break;
+      case "thirtyDeg":
+      text= "30 deg, sine = 0.5";
+      break;
+      case "fourtyFiveDegree":
+      text = "45 deg, sine = 0.71";
+      break;
+      default:
+      text = "An unhappy angle!";
+    }
+    document.getElementById("demo0").innerHTML = text;
+  }
+</script>
+
+<!--p>Write noDeg, thirtyDeg or fortyFiveDeg in the input field and click the button.</p>
+<p>The switch statement will execute a block of code based on your input.</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo0"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var angles = document.getElementById("myInput").value;
+
+  switch(angles) {
+    case "noDeg":
+      text = "0 deg, sine0  = 0";
+    break;
+    case "thirtyDeg":
+    text = "30 deg, sine = 0.5";
+    break;
+    case "fortyFiveDeg":
+    text = "45 deg, sine = 0.71";
+    break;
+    default:
+    text = "An unhappy angle!...";
+  }
+  document.getElementById("demo0").innerHTML = text;
+}
+</script>-->
 </body>
 </html>
